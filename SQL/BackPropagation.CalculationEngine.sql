@@ -1,6 +1,7 @@
 SET search_path TO ai_BackPropagation, public; 
 
--- the tabular function implemet the forward computation. It is the equivalent of the <Engine_step_iesimo> excel table.
+-- The tabular function implements the forward computation. It is the equivalent of the <Engine_step_iesimo> excel table.
+--
 --                ===                                      =========
 -- It returns the SSE, other model metricas and mainly the Gradients for the next iterations
 --                ===                                      =========
@@ -87,5 +88,6 @@ RETURNS FLOAT8[] AS $$
         ORDER BY i -- It's fundamental to link the  weights[i] with the related gradient
     );
 $$ LANGUAGE SQL IMMUTABLE;
+
 
 
