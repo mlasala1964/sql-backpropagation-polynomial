@@ -2,15 +2,15 @@ SET search_path TO ai_BackPropagation, public;
 
 
 --======================================================================================================================================
--- You can change the Degree of the polynomial adding or removing a valur in the <weights> array. 
+-- You can change the Degree of the polynomial adding or removing a value in the <weights> array. 
 -- A <weights> array with 2 values means a first-degree polynomial o linear polynomial
 -- A <weights> array with 3 values means a second-degree polynomial o quadratic polynomial
 -- ...
 -- A <weights> array with (n + 1) values means a polynomial of degree n o n-th degree polynomial
 UPDATE 	model_parameters 
    SET 	max_iterations 	= 5000, 
---		weights 		= ARRAY[0.1, 0.1, 0.1, 0.1, 18.0] -- [a, b, c, d, intercept/bias] - A fourth-degree polynomial is initialized with 5 weights
-		weights 		= ARRAY[0.1, 0.1, 0.1, 0.1, 0.1, 18.0] -- A fifth-degree polynomial is initialized with 6 weights
+		weights 		= ARRAY[0.1, 0.1, 0.1, 0.1, 18.0] -- [a, b, c, d, intercept/bias] - A fourth-degree polynomial is initialized with 5 weights
+--		weights 		= ARRAY[0.1, 0.1, 0.1, 0.1, 0.1, 18.0] -- A fifth-degree polynomial is initialized with 6 weights
 ;
 
 
