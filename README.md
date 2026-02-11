@@ -7,9 +7,10 @@ EXCEL and SQL implementations for a simple BACKPROPAGATION use case :
 ## Files Included
 - `BackPropagation 1 Dimension with 4 grade - Good Case -.xlsm`: Source Excel file with the 4th-degree model. ⚠️ Excel Macro Instructions (.xlsm file)
 - `/sql`: Folder containing SQL scripts:
-  - `init.sql`: Initialization of tables and data.
-  - `engine.sql`: `calculate_step_metrics` function.
-  - `train.sql`: Recursive query for training.
+  - `BackPropagation.Initialization.sql`: Initialization of tables and data.
+  - `BackPropagation.CalculationEngine.sql`: `calculate_step_metrics` and `update_weights` functions.
+  - `BackPropagation.Iterations.sql`: Recursive query for training.
+  - `BackPropagation.Model By PolinomialDegree.sql`: Recursive query for training different polynomial n-degree models in a single run.
 - `BackPropagation 1 Dimension with 4 grade - Bad Case -.xlsm`: Source Excel file initualized with a different dataset which puts the model into crisis 
 
 
