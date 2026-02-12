@@ -1,6 +1,6 @@
 # sql-backpropagation-polynomial
 EXCEL and SQL implementations for a simple BACKPROPAGATION use case :
-- Excel model simulating the backpropagation algorithm. [A simple Backpropagation implemented in Excel]https://medium.com/@mlasala1964/a-simple-backpropagation-implemented-in-excel-e06898e6ee3f
+- Excel model simulating the backpropagation algorithm. [A simple Backpropagation implemented in Excel](https://medium.com/@mlasala1964/a-simple-backpropagation-implemented-in-excel-e06898e6ee3f)
 - Implementation of a backpropagation algorithm in **PostgreSQL** for polynomial regression, used to compare performance against an Excel model
 
 
